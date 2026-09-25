@@ -50,7 +50,7 @@ backups, so logs will not grow without bound.
 
 ## Check it
 
-From `C:\Users\Curious Beats\AppData\Roaming\.minecraft\local-ah-flipper`:
+From `D:\git\coflclone`:
 
 ```powershell
 & 'C:\Python312\python.exe' archive\collector.py --status
@@ -69,3 +69,4 @@ ORDER BY s.ended_ms DESC LIMIT 20;
 
 To stop automatic collection, disable the named task in Windows Task Scheduler.
 The database remains available for later analysis.
+
