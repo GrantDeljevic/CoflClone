@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "profitRules": [
+    { "minProfit": 500000, "minProfitPercent": 25 },
+    { "minProfit": 1500000, "minProfitPercent": 10 }
+  ],
+  "pollSeconds": 60,
+  "maxCost": 0,
+  "minDailySales": 3,
+  "blockRecombobulatedAccessories": true
+}

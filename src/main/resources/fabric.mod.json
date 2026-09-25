@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "localahflipper",
+  "version": "${version}",
+  "name": "Local AH Flipper",
+  "description": "Personal Hypixel auction scanner with modifier-aware asking-price comparisons",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["local.ahflipper.LocalAhFlipper"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
