@@ -82,7 +82,7 @@ public final class LocalAhFlipper implements ClientModInitializer {
             var player = Minecraft.getInstance().player;
             if (player == null || !onHypixel(Minecraft.getInstance()) || !config.enabled) return;
             String line = String.format(Locale.US,
-                "§5§l[LocalFlip]§r §5%s §7BIN §e%,d§7 | resale estimate §e%,d§7 | profit §5§l%,d§r§7 | %d asks, %d sales | vol %s",
+                "§d§l[LocalFlip]§r §d%s §7BIN §e%,d§7 | resale estimate §e%,d§7 | profit §d§l%,d§r§7 | %d asks, %d sales | vol %s",
                 flip.name(), flip.cost(), flip.target(), flip.profit(), flip.comparables(), flip.soldReferences(), flip.volumeInfo());
             Minecraft.getInstance().gui.getChat().addServerSystemMessage(Component.literal(line).withStyle(style ->
                 style.withClickEvent(new ClickEvent.RunCommand("/viewauction " + flip.uuid()))
@@ -93,7 +93,7 @@ public final class LocalAhFlipper implements ClientModInitializer {
     private static void say(String message) {
         Minecraft.getInstance().execute(() -> {
             if (Minecraft.getInstance().player != null)
-                Minecraft.getInstance().gui.getChat().addServerSystemMessage(Component.literal("§5§l[LocalFlip]§r §f" + message));
+                Minecraft.getInstance().gui.getChat().addServerSystemMessage(Component.literal("§d§l[LocalFlip]§r §f" + message));
         });
     }
 
